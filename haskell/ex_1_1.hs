@@ -56,7 +56,7 @@ and1 x y = False
 -- Using guards
 ourMin :: Int -> Int -> Int
 ourMin x y | x < y = x
-           | x >= y = y
+           | otherwise = y
 
 middle :: String -> Char
 middle x = (x !! ((length x) `div` 2))
